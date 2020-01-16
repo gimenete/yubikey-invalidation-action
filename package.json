@@ -1,0 +1,24 @@
+{
+  "name": "yubikey-invalidation-action",
+  "version": "0.1.0",
+  "description": "GitHub Action that invalidates Yubikeys found in issues or issue comments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gimenete/yubikey-invalidation-action.git"
+  },
+  "keywords": [],
+  "author": "Alberto Gimeno <gimenete@gimenete.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gimenete/yubikey-invalidation-action/issues"
+  },
+  "homepage": "https://github.com/gimenete/yubikey-invalidation-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.1",
+    "@actions/github": "^2.0.1"
+  }
+}

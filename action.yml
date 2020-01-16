@@ -1,0 +1,30 @@
+name: 'YubiKey invalidation'
+description: 'Invalidates YubiKey OTPs found in a string'
+inputs:
+  YUBIKEY_API_ID:
+    description: 'The YubiKey API ID'
+    required: true
+  text:
+    description: 'The text that may contain OTPs'
+    required: true
+    default: ''
+  validation_url:
+    description: 'The URL for the YubiKey service. YubiCloud by default'
+    required: false
+    default: https://api.yubico.com/wsapi/2.0/verify
+  GITHUB_TOKEN:
+    description: 'The GITHUB TOKEN to use if you want to automatically add a comment to an issue'
+    required: false
+  payload:
+    description: 'The event payload in case you want to add issue comments automatically'
+    required: false
+outputs:
+  message:
+    description: 'A summary of what the action did'
+  found:
+    description: 'Whether or not a YubiKey was found'
+  invalidated:
+    description: 'Whether or not a YubiKey was successfully invalidated'
+runs:
+  using: 'node12'
+  main: 'index.js'
