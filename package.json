@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/gimenete/yubikey-invalidation-action#readme",
   "dependencies": {
-    "@actions/core": "^1.2.1",
+    "@actions/core": "^1.9.1",
     "@actions/github": "^2.0.1"
   }
 }
